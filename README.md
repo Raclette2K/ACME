@@ -18,4 +18,6 @@ there is a lot of problems in it)
 ## What does this repo contain ? 
 This repository contains all the source code including the Visual Studio project file.
 <br>If you want to modify the project be sure to use VS2017 and the Windows 10 SDK.
-## 
+## So where do I download it ? 
+Oh pretty simple, go to https://acme.raclette-it.com/download.html or get it from the folder Release in the repo.
+<br>You may need the VCRedist 2017 x86/x64 which you can download from the official Microsoft website.
