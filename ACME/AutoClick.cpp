@@ -121,7 +121,7 @@ namespace ACME
 			}
 
 			// When the user click on the trigger button 
-			if (GetAsyncKeyState(m_key)&1)
+			if (GetAsyncKeyState(m_key))
 			{
 				// If it is in Push Mode
 				if (m_modeTrigger == 0) {
