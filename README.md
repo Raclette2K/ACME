@@ -22,4 +22,13 @@ This repository contains all the source code including the Visual Studio project
 Oh pretty simple, go to https://acme.raclette-it.com/download.html or get it from the folder Release in the repo.
 <br>You may need the VCRedist 2017 x86/x64 which you can download from the official Microsoft website.
 ## Known issues :/
-Sometimes, some app will not work. Try to launch ACME in administrator because the *SendInput()* function from the Windows API doesn't work on app that are more privilegied than ACME. And if it still doesn't work and the app you are using is in fullscreen, try to set it in windowed mode. 
+If you find issues, feel free to report them, I'll gladly look into them !
+### App not launching (msvcp140.dll missing or something like that)
+To solve this issue, download the VCRedist 2017 in x86 or x64 (depends of the version of ACME you downoaded) from Microsoft website : https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads
+### App not receiving the clicks
+Sometimes, some app will not work with ACME. Try to launch ACME in administrator because the *SendInput()* function from the Windows API doesn't work on app that are more privilegied than ACME. And if it still doesn't work and the app you are using is in fullscreen, try to set it in windowed mode. 
+### Can't change the Trigger Key
+Issue reported on Windows 7 : When you want to change the trigger key, it doesn't wait for your input.
+<br>**No known solution for the moment, a change in the code may be required**
+### Random bugs
+- When in swith mode and changing the trigger key, the swith mode can be trigger by itself. So be wary when you are in switch mode. It is recommended to set ACME in push mode before changing the key to avoid this tiny but annoying bug.
