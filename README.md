@@ -29,6 +29,7 @@ To solve this issue, download the VCRedist 2017 in x86 or x64 (depends of the ve
 Sometimes, some app will not work with ACME. Try to launch ACME in administrator because the *SendInput()* function from the Windows API doesn't work on app that are more privilegied than ACME. And if it still doesn't work and the app you are using is in fullscreen, try to set it in windowed mode. 
 ### Can't change the Trigger Key
 Issue reported on Windows 7 : When you want to change the trigger key, it doesn't wait for your input.
+<br>If you still want to use ACME, you can open the .ini file and change the VK to the value in DECIMAL not HEX of the key you want to use using https://msdn.microsoft.com/en-us/library/windows/desktop/dd375731(v=vs.85).aspx as reference. (e.g. : 0x10 is shift, so you put 16 in VK because 0x10(HEX) = 16(DECIMAL))
 <br>**No known solution for the moment, a change in the code may be required**
 ### Random bugs
 - When in swith mode and changing the trigger key, the swith mode can be trigger by itself. So be wary when you are in switch mode. It is recommended to set ACME in push mode before changing the key to avoid this tiny but annoying bug.
