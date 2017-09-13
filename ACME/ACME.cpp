@@ -1,8 +1,4 @@
 /*
----------------------------------------------
-Huge thanks to Hydro for making the website.
-Go check him out at : http://hydrocorp.space
----------------------------------------------
 
 ============================ DISCLAIMER ==============================
 This project is not a "definitive" product and will never be one.
