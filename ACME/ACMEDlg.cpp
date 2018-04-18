@@ -128,6 +128,9 @@ BOOL CACMEDlg::OnInitDialog()
 	SetIcon(m_hIcon, TRUE);			// Set big icon
 	SetIcon(m_hIcon, FALSE);		// Set small icon
 
+	// Initialize the current key used, preventing it to be set to 0 by default
+	_temp_Key = m_conf->getClick();
+	
 	// Display values from config into the UI 
 	m_CTriggerMode.SetCurSel(m_conf->getTriggerMode()); 
 	m_CIntervalMode.SetCurSel(m_conf->getIntervalMode()); 
